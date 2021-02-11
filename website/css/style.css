@@ -50,3 +50,73 @@ h4 {font-size: 1.777rem;}
 h5 {font-size: 1.333rem;}
 
 small, .text_small {font-size: 0.75rem;}
+
+/* Layout elements */
+.section-title{
+
+}
+.section-title:after{
+    content: '';
+    width: 28%;
+    height: 5px;
+    background: var(--color-light-blue);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.section-title:before{
+  content: '';
+    width: 28%;
+    height: 5px;
+    background: var(--color-light-blue);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+/* Testimonials section */
+.testimonials .carousel-indicators li {
+  background-color: var(--color-light-blue);
+  border: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+}
+.testimonials .carousel-control-prev {
+  background-color: var(--color-light-blue);;
+  clip-path: ellipse(23% 43% at 0% 50%);
+  color: var(--color-light-blue);
+  transition: .5s;
+}
+.testimonials .carousel-control-next {
+  background-color: var(--color-light-blue);;
+  clip-path: ellipse(23% 43% at 100% 50%);
+  color: var(--color-light-blue);
+  transition: .5s;
+}
+.testimonials a.carousel-control-next:hover,a.carousel-control-next:focus{
+  opacity:0.7;
+  color: var(--color-light-blue);
+  clip-path: ellipse(37% 43% at 100% 50%);
+}
+.testimonials a.carousel-control-prev:hover,a.carousel-control-prev:focus{
+  opacity:0.7;
+  color: var(--color-light-blue);
+  clip-path: ellipse(37% 43% at 0% 50%);
+}
+.testimonials .carousel-inner {
+  margin-right: 15%;
+  margin-left: 15%;
+  width: calc(100% - 30%);
+}
+.testimonials .client-img {
+  width: 150px;
+  height: 150px;
+  border-width: 4px !important;
+  border-color:var(--color-light-blue) !important;
+}
+.testimonials div.row:nth-child(2) > div{
+padding:0px;
+}
