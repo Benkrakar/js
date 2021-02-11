@@ -8,3 +8,13 @@
   #FFF : texte avec un background noir 
   #000 : il est toujours présent 
 ===============================================================*/
+:root{
+  --color-light-blue:#34C6D3;
+  --color-dark-gray:#41464B;
+  --color-light-gray:#64707B;
+  --color-white:#ffffff;
+  --color-black:#000000;
+}
+body{
+  font-family: Roboto;
+}
