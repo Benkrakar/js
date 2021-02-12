@@ -50,3 +50,41 @@ h4 {font-size: 1.777rem;}
 h5 {font-size: 1.333rem;}
 
 small, .text_small {font-size: 0.75rem;}
+
+/*Nos realisaction*/
+.project{
+  overflow: hidden;
+  position: relative;
+  margin:0px;
+  padding: 0px !important;
+}
+.titre-project{
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255,255,255,.6);
+  transform: translateX(-100%);
+  transition: 1s;
+}
+.project:hover .titre-project{
+  transform: translateX(0%);
+
+}
+/*Our team*/
+.nom-equipe{
+text-align: center;
+}
+.img-team{
+    border: solid;
+    width: 150px;
+    height: 150px;
+    border-width: 4px !important;
+    border-color:var(--color-light-blue) !important;
+  
+}
