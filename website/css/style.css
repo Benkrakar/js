@@ -82,9 +82,17 @@ text-align: center;
 }
 .img-team{
     border: solid;
-    width: 150px;
-    height: 150px;
+    width: 150px !important;
+    height: 150px !important;
     border-width: 4px !important;
     border-color:var(--color-light-blue) !important;
-  
+}
+/*Our client*/
+
+.logo-client{
+  border: solid;
+  width: 150px !important;
+  height: 150px !important;
+  border-width: 4px !important;
+  border-color:var(--color-light-blue) !important;
 }
