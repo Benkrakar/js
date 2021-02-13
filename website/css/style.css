@@ -50,3 +50,82 @@ h4 {font-size: 1.777rem;}
 h5 {font-size: 1.333rem;}
 
 small, .text_small {font-size: 0.75rem;}
+
+/*Nos realisaction*/
+.project{
+  overflow: hidden;
+  position: relative;
+  margin:0px;
+  padding: 0px !important;
+}
+.titre-project{
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255,255,255,.6);
+  transform: translateX(-100%);
+  transition: 1s;
+}
+.project:hover .titre-project{
+  transform: translateX(0%);
+
+}
+/*Our team*/
+.nom-equipe{
+text-align: center;
+}
+.img-team{
+    border: solid;
+    width: 150px !important;
+    height: 150px !important;
+    border-width: 4px !important;
+    border-color:var(--color-light-blue) !important;
+}
+/*Our client*/
+
+.logo-client{
+  border: solid;
+  width: 150px !important;
+  height: 150px !important;
+  border-width: 4px !important;
+  border-color:var(--color-light-blue) !important;
+}
+/*slide*/
+.owl-item > div {
+  cursor: pointer;
+  margin: 6% 8%;
+  transition: margin 0.4s ease;
+}
+.owl-item.center > div {
+  cursor: auto;
+  margin: 0;
+}
+.owl-item:not(.center) > div:hover {
+  opacity: .75;
+}
+.owl-dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: var(--color-light-blue) !important;
+  opacity: 1;
+  margin: 5px;
+}
+.owl-dot.active{
+  transform: scale(1.2);
+}
+.owl-dots {
+  text-align: center;
+}
+.owl-item.active.center img{
+  transition: .5s !important;
+  transform: translateY(-20px) !important;
+  box-shadow: rgba(0,0,0,0.4) 0px 13px 20px !important;
+  max-height: unset !important;
+}
