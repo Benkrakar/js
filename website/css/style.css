@@ -111,7 +111,7 @@ small, .text_small {font-size: 0.75rem;}
   margin-left: 15%;
   width: calc(100% - 30%);
 }
-.testimonials .client-img {
+.testimonials .t-client-img {
   width: 150px;
   height: 150px;
   border-width: 4px !important;
@@ -119,4 +119,23 @@ small, .text_small {font-size: 0.75rem;}
 }
 .testimonials div.row:nth-child(2) > div{
 padding:0px;
+}
+.carousel-control-next-icon,.carousel-control-prev-icon {
+  background: none;
+  color: white;
+  margin:4%;
+}
+.carousel-control-next {
+  display: flex;
+  justify-content: flex-end;
+}
+.carousel-control-prev {
+  display: flex;
+  justify-content: flex-start;
+}
+.carousel-indicators li{
+  transition: .5s;
+}
+.carousel-indicators li.active{
+  transform: scale(1.2) translateY(-5px);
 }
