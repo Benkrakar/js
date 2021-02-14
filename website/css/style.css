@@ -14,6 +14,24 @@
   --color-light-gray:#64707B;
   --color-white:#ffffff;
   --color-black:#000000;
+  /* 70% */
+  --color-light-blue-70:#34C6D370;
+  --color-dark-gray-70:#41464B70;
+  --color-light-gray-70:#64707B70;
+  --color-white-70:#ffffff70;
+  --color-black-70:#00000070;
+  /* 50% */
+  --color-light-blue-50:#34C6D350;
+  --color-dark-gray-50:#41464B50;
+  --color-light-gray-50:#64707B50;
+  --color-white-50:#ffffff50;
+  --color-black-50:#00000050;
+  /* 30% */
+  --color-light-blue-30:#34C6D330;
+  --color-dark-gray-30:#41464B30;
+  --color-light-gray-30:#64707B30;
+  --color-white-30:#ffffff30;
+  --color-black-30:#00000030;
 }
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400');
 
@@ -51,13 +69,12 @@ h5 {font-size: 1.333rem;}
 
 small, .text_small {font-size: 0.75rem;}
 
-/* Layout elements */
 .section-title{
-
+  position: relative;
 }
 .section-title:after{
     content: '';
-    width: 28%;
+    width: 15%;
     height: 5px;
     background: var(--color-light-blue);
     position: absolute;
@@ -67,7 +84,7 @@ small, .text_small {font-size: 0.75rem;}
 }
 .section-title:before{
   content: '';
-    width: 28%;
+    width: 15%;
     height: 5px;
     background: var(--color-light-blue);
     position: absolute;
@@ -138,4 +155,84 @@ padding:0px;
 }
 .carousel-indicators li.active{
   transform: scale(1.2) translateY(-5px);
+}
+/*Nos realisaction*/
+.project{
+  overflow: hidden;
+  position: relative;
+  margin:0px;
+  padding: 0px !important;
+}
+.titre-project{
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-light-blue-70);
+  transform: translateX(-100%);
+  transition: .5s;
+  font-size:2rem;
+  color: var(--color-white);
+}
+.project:hover .titre-project{
+  transform: translateX(0%);
+}
+/*Our team*/
+.nom-equipe{
+text-align: center;
+}
+.img-team{
+    border: solid;
+    width: 150px !important;
+    height: 150px !important;
+    border-width: 4px !important;
+    border-color:var(--color-light-blue) !important;
+}
+/*Our client*/
+
+.logo-client{
+  border: solid;
+  width: 150px !important;
+  height: 150px !important;
+  border-width: 4px !important;
+  border-color:var(--color-light-blue) !important;
+}
+/*slide*/
+.owl-item > div {
+  cursor: pointer;
+  margin: 6% 8%;
+  transition: margin 0.4s ease;
+}
+.owl-item.center > div {
+  cursor: auto;
+  margin: 0;
+}
+.owl-item:not(.center) > div:hover {
+  opacity: .75;
+}
+.owl-dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: var(--color-light-blue) !important;
+  opacity: 1;
+  margin: 5px;
+}
+.owl-dot.active{
+  transform: scale(1.2);
+}
+.owl-dots {
+  text-align: center;
+}
+.owl-item.active.center img{
+  transition: .5s !important;
+  transform: translateY(-20px) !important;
+  box-shadow: rgba(0,0,0,0.4) 0px 13px 20px !important;
+  max-height: unset !important;
 }
