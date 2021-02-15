@@ -61,3 +61,4 @@ $(document).on('click', '.owl-item>div', function() {
 $('.img-team').css({
     'max-height': $('.img-team').width()
 });
+
