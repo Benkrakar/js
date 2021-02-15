@@ -11,21 +11,7 @@ $owl.owlCarousel({
   items: 3,
   nav:false,
   autoplay:true,
-  dots:true,
-  responsive : {
-    // breakpoint from 0 up
-    0 : {
-        items:1
-    },
-    // breakpoint from 480 up
-    480 : {
-        items:1
-    },
-    // breakpoint from 768 up
-    768 : {
-        items:3
-    }
-}
+  dots:true
 });
 
 $(document).on('click', '.owl-item>div', function() {

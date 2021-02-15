@@ -14,24 +14,6 @@
   --color-light-gray:#64707B;
   --color-white:#ffffff;
   --color-black:#000000;
-  /* 70% */
-  --color-light-blue-70:#34C6D370;
-  --color-dark-gray-70:#41464B70;
-  --color-light-gray-70:#64707B70;
-  --color-white-70:#ffffff70;
-  --color-black-70:#00000070;
-  /* 50% */
-  --color-light-blue-50:#34C6D350;
-  --color-dark-gray-50:#41464B50;
-  --color-light-gray-50:#64707B50;
-  --color-white-50:#ffffff50;
-  --color-black-50:#00000050;
-  /* 30% */
-  --color-light-blue-30:#34C6D330;
-  --color-dark-gray-30:#41464B30;
-  --color-light-gray-30:#64707B30;
-  --color-white-30:#ffffff30;
-  --color-black-30:#00000030;
 }
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400');
 
@@ -69,93 +51,6 @@ h5 {font-size: 1.333rem;}
 
 small, .text_small {font-size: 0.75rem;}
 
-.section-title{
-  position: relative;
-}
-.section-title:after{
-    content: '';
-    width: 15%;
-    height: 5px;
-    background: var(--color-light-blue);
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-}
-.section-title:before{
-  content: '';
-    width: 15%;
-    height: 5px;
-    background: var(--color-light-blue);
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-}
-
-/* Testimonials section */
-.testimonials .carousel-indicators li {
-  background-color: var(--color-light-blue);
-  border: none;
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-}
-.testimonials .carousel-control-prev {
-  background-color: var(--color-light-blue);;
-  clip-path: ellipse(23% 43% at 0% 50%);
-  color: var(--color-light-blue);
-  transition: .5s;
-}
-.testimonials .carousel-control-next {
-  background-color: var(--color-light-blue);;
-  clip-path: ellipse(23% 43% at 100% 50%);
-  color: var(--color-light-blue);
-  transition: .5s;
-}
-.testimonials a.carousel-control-next:hover,a.carousel-control-next:focus{
-  opacity:0.7;
-  color: var(--color-light-blue);
-  clip-path: ellipse(37% 43% at 100% 50%);
-}
-.testimonials a.carousel-control-prev:hover,a.carousel-control-prev:focus{
-  opacity:0.7;
-  color: var(--color-light-blue);
-  clip-path: ellipse(37% 43% at 0% 50%);
-}
-.testimonials .carousel-inner {
-  margin-right: 15%;
-  margin-left: 15%;
-  width: calc(100% - 30%);
-}
-.testimonials .t-client-img {
-  width: 150px;
-  height: 150px;
-  border-width: 4px !important;
-  border-color:var(--color-light-blue) !important;
-}
-.testimonials div.row:nth-child(2) > div{
-padding:0px;
-}
-.carousel-control-next-icon,.carousel-control-prev-icon {
-  background: none;
-  color: white;
-  margin:4%;
-}
-.carousel-control-next {
-  display: flex;
-  justify-content: flex-end;
-}
-.carousel-control-prev {
-  display: flex;
-  justify-content: flex-start;
-}
-.carousel-indicators li{
-  transition: .5s;
-}
-.carousel-indicators li.active{
-  transform: scale(1.2) translateY(-5px);
-}
 /*Nos realisaction*/
 .project{
   overflow: hidden;
@@ -171,17 +66,15 @@ padding:0px;
   bottom: 0px;
   right: 0px;
   display: flex;
-  margin: 0;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-light-blue-70);
+  background-color: rgba(255,255,255,.6);
   transform: translateX(-100%);
-  transition: .5s;
-  font-size:2rem;
-  color: var(--color-white);
+  transition: 1s;
 }
 .project:hover .titre-project{
   transform: translateX(0%);
+
 }
 /*Our team*/
 .nom-equipe{
@@ -235,4 +128,35 @@ text-align: center;
   transform: translateY(-20px) !important;
   box-shadow: rgba(0,0,0,0.4) 0px 13px 20px !important;
   max-height: unset !important;
+}
+
+
+/* Ali */
+.home {
+  /* width: 100vw;
+height: 100vh; */
+  background: url(../img/home-bg.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+.bg-75-transparent {
+  background-color: rgba(255, 255, 255, .75);
+}
+
+.roboto-font {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.dark-grey-text {
+  color: var(--color-dark-gray);
+}
+
+.highlighted {
+  background-color: #ffffffd9;
+  padding: 1rem 2rem;
+  clip-path: polygon(0 0, 100% 0, 98% 50%, 100% 100%, 0% 100%, 2% 50%);
 }
