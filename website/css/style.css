@@ -346,3 +346,13 @@ height: 100vh; */
   0%{box-shadow: #00bcd494 0px 0px 0px;}
   100%{box-shadow: #00bcd494 0px -15px 30px;}
 }
+.services i {
+  color: #00bcd4;
+  font-size: 3rem;
+}
+#my-canvas {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 0;
+}
