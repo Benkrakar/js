@@ -14,7 +14,7 @@
     addListeners();
 
     function initHeader() {
-        width = window.outerWidth - 5;
+        width = window.outerWidth - 25;
         height = window.outerHeight;
         /*width = 1903px;
             height = 900px;*/
@@ -115,7 +115,7 @@
 
     function resize() {
 
-        width = window.outerWidth - 5;
+        width = window.outerWidth - 25;
         height = window.outerHeight;
         // largeHeader.style.height = height + "px";
         canvas.width = width;
