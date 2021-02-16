@@ -7,7 +7,7 @@ $owl.owlCarousel({
     center: true,
     loop: true,
     items: 3,
-    nav: false,
+    nav: true,
     autoplay: true,
     dots: true,
     responsive: {
@@ -38,10 +38,11 @@ $owl.children().each(function(index) {
 $owl.owlCarousel({
     center: true,
     loop: true,
-    items: 5,
-    nav: false,
+    items: 3,
+    nav: true,
     autoplay: true,
     dots: true,
+    transitionStyle : "fade",
     responsive: {
         0: {
             items: 1
@@ -50,7 +51,7 @@ $owl.owlCarousel({
             items: 1
         },
         768: {
-            items: 5
+            items: 3
         }
     }
 });

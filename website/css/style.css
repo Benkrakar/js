@@ -32,6 +32,9 @@
             color: #000000;
             overflow-x: hidden;
         }
+        body a{
+            text-decoration: none im !important;
+        }
         
         p {
             margin-bottom: 1rem;
@@ -497,4 +500,21 @@ background-repeat: no-repeat;
   .price-label{
     right: -15px;
   }
+}
+
+.owl-nav > button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.owl-nav > .owl-next {
+    right: 0;
+}
+.owl-nav > .owl-prev {
+    left: 0;
+}
+.owl-nav > button > span {
+    font-size: 4rem;
+    color: var(--color-light-blue);
 }
