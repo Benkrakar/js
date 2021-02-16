@@ -450,6 +450,7 @@ height: 100vh; */
 }
 section.n-s-learning {
 position: relative;
+background-attachment: fixed;
 }
 .n-s{
 opacity:0,6;
