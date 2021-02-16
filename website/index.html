@@ -31,31 +31,31 @@
 </head>
 
 <body>
-  <header class="fixed-top">
-    <!--Ali-->
-    <nav class="navbar bg-white navbar-expand-lg navbar-light shadow-sm bg">
-        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <a class="navbar-brand" href="#">
-            <img src="./img/4165102.png" width="50" height="30" class="d-inline-block align-top" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav dark-grey-text roboto-font">
-                <a class="nav-item nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Services</a>
-                <a class="nav-item nav-link" href="#">Qui somme nous</a>
-                <a class="nav-item nav-link" href="#">Réalisation</a>
-                <a class="nav-item nav-link" href="#">Equipe</a>
-                <a class="nav-item nav-link" href="#">Clients</a>
-                <a class="nav-item nav-link" href="#">Testimonials</a>
-                <a class="nav-item nav-link" href="#">Pricing</a>
-                <a class="nav-item nav-link" href="#">Contact</a>
+    <header class="fixed-top">
+        <!--Ali-->
+        <nav class="navbar bg-white navbar-expand-lg navbar-light shadow-sm bg">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <a class="navbar-brand" href="#">
+                <img src="./img/4165102.png" width="50" height="30" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav dark-grey-text roboto-font">
+                    <a class="nav-item nav-link" href="#home">Accueil <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#services">Services</a>
+                    <a class="nav-item nav-link" href="#about">Qui somme nous</a>
+                    <a class="nav-item nav-link" href="#realizations">Réalisation</a>
+                    <a class="nav-item nav-link" href="#team">Equipe</a>
+                    <a class="nav-item nav-link" href="#clients">Clients</a>
+                    <a class="nav-item nav-link" href="#testimonials">Testimonials</a>
+                    <a class="nav-item nav-link" href="#pricing">Pricing</a>
+                    <a class="nav-item nav-link" href="#contact">Contact</a>
+                </div>
             </div>
-        </div>
-    </nav>
-    <!-- <nav class="navbar navbar-light bg-light shadow-sm bg-white rounded">
+        </nav>
+        <!-- <nav class="navbar navbar-light bg-light shadow-sm bg-white rounded">
     <a class="navbar-brand" href="#">
         <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
     </a>
@@ -71,15 +71,15 @@
         <li class="list-inline-item">Contact</li>
     </ul>
 </nav> -->
-</header>
-<main>
-    <section class="home d-flex flex-column justify-content-center align-items-center">
-        <!--Ali-->
-        <canvas id="my-canvas"></canvas>
-        <h1 class="highlighted roboto-font h4">On Vous Rappele sous 24h Digitalisation en main</h1>
-        <button type="button" class="btn btn-primary roboto-font mt-2 ">SUBSCRIBE</button>
-    </section>
-        <section class="services">
+    </header>
+    <main>
+        <section id="home" class="home d-flex flex-column justify-content-center align-items-center">
+            <!--Ali-->
+            <canvas id="my-canvas"></canvas>
+            <h1 class="highlighted roboto-font h4">On Vous Rappele sous 24h Digitalisation en main</h1>
+            <button type="button" class="btn btn-primary roboto-font mt-2 ">SUBSCRIBE</button>
+        </section>
+        <section id="services" class="services">
             <!--Korchi-->
             <h2 class="section-title text-center">Services</h2>
             <div class="container">
@@ -167,7 +167,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section id="about" class="about">
             <!-- Korchi -->
             <div class="container">
                 <div class="row">
@@ -188,7 +188,7 @@
                 </div>
             </div>
         </section>
-        <section class="realizations">
+        <section id="realizations" class="realizations">
             <!-- Zroud -->
             <div class="container-fluid">
                 <h2 class="text-center section-title mt-5 mb-5 pb-2">Realisaction</h2>
@@ -244,7 +244,7 @@
                 </div>
             </div>
         </section>
-        <section class="team pb-5">
+        <section id="team" class="team pb-5">
             <!-- Zroud -->
             <div class="container">
                 <h2 class="text-center section-title mt-5 mb-5 pb-2">Equipe</h2>
@@ -282,7 +282,7 @@
                 </div>
             </div>
         </section>
-        <section class="clients pb-5">
+        <section id="clients" class="clients pb-5">
             <!-- Zroud -->
             <div class="container">
                 <h2 class="text-center section-title mt-5 mb-5 pb-2">Nos Clients</h2>
@@ -320,7 +320,7 @@
                 </div>
             </div>
         </section>
-        <section class="testimonials pt-5 pb-5">
+        <section id="testimonials" class="testimonials pt-5 pb-5">
             <!-- Bardich -->
             <div class="container-fluid">
                 <div class="row">
@@ -395,7 +395,7 @@
                 </div>
             </div>
         </section>
-        <section class="pricing pb-5">
+        <section id="pricing" class="pricing pb-5">
             <!-- Bardich -->
             <div class="container">
                 <div class="row">
@@ -446,59 +446,61 @@
                 </div>
             </div>
         </section>
-        <section class="n-s-learning pb-5 pt-2 text-center bg-image"><!-- Sara -->
-          <div class="n-s">
-            <h2 class="text-center section-title mt-5 mb-5 pb-2">Never Stop learning</h2>
-            <div class="row d-flex justify-content-around">
-              <div class="learning-box mb-3 col-12 col-md-3 d-flex flex-column">
-                <i class="fas fa-download display-4 text-primary"></i>            
-                <a href="#" class="text-center mt-2 text-black display-4 font-weight-bold">100</a>
-              </div>
-              <div class="learning-box mb-3 col-12 col-md-3 d-flex flex-column">                
-                <i class="fas fa-award display-4"></i>                
-                <a href="#" class="text-center mt-2 text-dark display-4 font-weight-bold">100</a>
-              </div>
-              <div class="learning-box  mb-3 col-12 col-md-3 d-flex flex-column">
-                <i class="fas fa-heart display-4 text-danger"></i>                
-                <a href="#" class="text-center mt-2 text-dark display-4 font-weight-bold">100</a>
-              </div>
-              <div class="learning-box  mb-3 col-12 col-md-3 d-flex flex-column">
-                <i class="fas fa-star display-4 text-warning"></i>                
-                <a href="#" class="text-center mt-2 text-dark display-4 font-weight-bold">100</a>
-              </div>
-              </div>
+        <section id="learning" class="n-s-learning pb-5 pt-2 text-center bg-image">
+            <!-- Sara -->
+            <div class="n-s">
+                <h2 class="text-center section-title mt-5 mb-5 pb-2">Never Stop learning</h2>
+                <div class="row d-flex justify-content-around">
+                    <div class="learning-box mb-3 col-12 col-md-3 d-flex flex-column">
+                        <i class="fas fa-download display-4 text-primary"></i>
+                        <a href="#" class="text-center mt-2 text-black display-4 font-weight-bold">0</a>
+                    </div>
+                    <div class="learning-box mb-3 col-12 col-md-3 d-flex flex-column">
+                        <i class="fas fa-award text-info display-4"></i>
+                        <a href="#" class="text-center mt-2 text-dark display-4 font-weight-bold">0</a>
+                    </div>
+                    <div class="learning-box  mb-3 col-12 col-md-3 d-flex flex-column">
+                        <i class="fas fa-heart display-4 text-danger"></i>
+                        <a href="#" class="text-center mt-2 text-dark display-4 font-weight-bold">0</a>
+                    </div>
+                    <div class="learning-box  mb-3 col-12 col-md-3 d-flex flex-column">
+                        <i class="fas fa-star display-4 text-warning"></i>
+                        <a href="#" class="text-center mt-2 text-dark display-4 font-weight-bold">0</a>
+                    </div>
+                </div>
             </div>
-          
+
         </section>
-      </main>
-      <footer><!-- Sara -->
+    </main>
+    <footer>
+        <!-- Sara -->
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6">
                     <h2>YCA</h2>
-                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur aliquid quas obcaecati soluta? Esse tenetur ratione sit nisi quia tempora placeat illo? Numquam amet consectetur voluptas porro rerum reiciendis dolorem!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur aliquid quas obcaecati soluta? Esse tenetur ratione sit nisi quia tempora placeat illo? Numquam amet consectetur voluptas porro rerum reiciendis dolorem!</p>
                     <div class="footer-s-icons text-center text-md-left">
-                      <a href="#"><i class="fab fa-google"></i></a>
-                      <a href="#"><i class="fab fa-youtube"></i></a>
-                      <a href="#"><i class="fab fa-twitter-square"></i></a>
-                      <a href="#"><i class="fab fa-facebook-square"></i></a>
-                  </div>
+                        <a href="#"><i class="fab fa-google"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    </div>
                 </div>
-                <div class="col-12 col-md-6">
-                      <h5 class="text-center text-md-left d-block">Contactez nous</h5>
-                      <hr>
+                <div id="contact" class="col-12 col-md-6">
+                    <h5 class="text-center text-md-left d-block">Contactez nous</h5>
+                    <hr>
                     <form>
-                      <fieldset class="form-group">
-                        <input type="Name" class="form-control" id="exampleInputEmail1" placeholder="Full Name">
-                      </fieldset>
+                        <fieldset class="form-group">
+                            <input type="Name" class="form-control" id="exampleInputEmail1" placeholder="Full Name">
+                        </fieldset>
                         <fieldset class="form-group">
                             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address">
                         </fieldset>
                         <fieldset class="form-group">
                             <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
                         </fieldset>
-                        <fieldset class="form-group text-xs-right"> 
-                          <button type="button" class="btn btn-info">SEND</button>
+                        <fieldset class="form-group text-xs-right">
+                            <button type="button" class="btn btn-info">SEND</button>
                         </fieldset>
                     </form>
                 </div>
@@ -506,30 +508,30 @@
         </div>
         <hr class="bg-info">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-12 col-md-6">
-              <div class="copyright" role="copyright">
-                <div class="container">
-                  <div class="row center">
-                      <div class="text-center text-md-left col-md-12">
-                          <p class="m-0">Copyright 2020 All rights reserved by YCA</p>
-                      </div>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <div class="copyright" role="copyright">
+                        <div class="container">
+                            <div class="row center">
+                                <div class="text-center text-md-left col-md-12">
+                                    <p class="m-0">Copyright 2020 All rights reserved by YCA</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-12 col-md-6">
-              <ul class="footer-nav text-center p-0">
-                  <li><a class="nav-item nav-link text-white" href="#">Accueil / </a></li>
-                  <li><a class="nav-item nav-link text-white" href="#">Services /</a></li>
-                  <li><a class="nav-item nav-link text-white" href="#">Réalisation / </a></li>
-                  <li><a class="nav-item nav-link text-white" href="#">Equipe / </a></li>
-                  <li><a class="nav-item nav-link text-white" href="#">Clients / </a></li>
-                  <li><a class="nav-item nav-link text-white" href="#">Testimonials / </a></li>
-                  <li><a class="nav-item nav-link text-white" href="#">Pricing</a></li>
-              </ul>
-          </div>
-      </footer>
+                </div>
+                <div class="col-12 col-md-6">
+                    <ul class="footer-nav text-center p-0">
+                        <li><a class="nav-item nav-link text-white" href="#">Accueil / </a></li>
+                        <li><a class="nav-item nav-link text-white" href="#">Services /</a></li>
+                        <li><a class="nav-item nav-link text-white" href="#">Réalisation / </a></li>
+                        <li><a class="nav-item nav-link text-white" href="#">Equipe / </a></li>
+                        <li><a class="nav-item nav-link text-white" href="#">Clients / </a></li>
+                        <li><a class="nav-item nav-link text-white" href="#">Testimonials / </a></li>
+                        <li><a class="nav-item nav-link text-white" href="#">Pricing</a></li>
+                    </ul>
+                </div>
+    </footer>
 
     <!--
       All js includes
