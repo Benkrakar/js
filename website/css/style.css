@@ -21,6 +21,7 @@
         html {
             font-size: 100%;
             overflow-x: hidden;
+            scroll-behavior: smooth;
         }
         /*16px*/
         
@@ -477,6 +478,7 @@ height: 100vh; */
         
         .btn:hover {
             background: #34C6D3;
+            border: 0;
         }
         
         .bg-imagr {
@@ -491,6 +493,7 @@ height: 100vh; */
             background-size: cover;
             background-position: bottom center;
             position: relative;
+            background-attachment: fixed;
         }
         /* -------- */
         
@@ -533,6 +536,16 @@ height: 100vh; */
             color: var(--color-light-blue);
         }
         
-        .fa-download a {
-            color: black;
+        .fa-download+a {
+            color: black!important;
+        }
+        
+        #home::before {
+            content: '';
+            position: absolute;
+            z-index: 0;
+            opacity: .55;
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(to bottom right, var(--color-dark-gray), var(--color-light-blue));
         }
