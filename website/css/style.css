@@ -32,7 +32,8 @@
             color: #000000;
             overflow-x: hidden;
         }
-        body a{
+        
+        body a {
             text-decoration: none im !important;
         }
         
@@ -434,87 +435,104 @@ height: 100vh; */
             color: #00bcd4;
             font-size: 3rem;
         }
-        .home > h1,.home > button{
-          position: relative;
-          z-index: 1;
+        
+        .home>h1,
+        .home>button {
+            position: relative;
+            z-index: 1;
         }
+        
         #my-canvas {
             position: absolute;
             z-index: 0;
             left: 0;
             top: 0;
         }
-/*......sara......*/
-.display-1 {
-  font-size: 4rem;
-}
-section.n-s-learning {
-position: relative;
-}
-.n-s{
-opacity:0,6;
-z-index:1;
-position:relative;
-}
-footer a {
-  /* color: #999; */
-  text-decoration: none;
-}
-
-
-footer {
-padding-top: 30px;
-background-color: var(--color-light-blue);
-color: var(--color-white);
-}
-.btn:hover {
-background:#34C6D3;
-}
-.bg-imagr {
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.n-s-learning{
-background-image: url('../img/nstl-bg.jpg');
-min-height: 400px;
-background-repeat: no-repeat;
- background-size: cover;
- background-position:bottom center;
- position:relative;
-}
-/* -------- */
-.footer-s-icons i {
-  font-size: 1.3rem;
-  margin: 3px;
-  color: var(--color-white);
-}
-.footer-nav li {
-  display: inline-block;
-}
-
-
-@media (max-width:768px){
-  .section-title:after,.section-title:before{
-    display: none;
-  }
-  .price-label{
-    right: -15px;
-  }
-}
-
-.owl-nav > button {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-}
-
-.owl-nav > .owl-next {
-    right: 0;
-}
-.owl-nav > .owl-prev {
-    left: 0;
-}
-.owl-nav > button > span {
-    font-size: 4rem;
-    color: var(--color-light-blue);
-}
+        /*......sara......*/
+        
+        .display-1 {
+            font-size: 4rem;
+        }
+        
+        section.n-s-learning {
+            position: relative;
+        }
+        
+        .n-s {
+            opacity: 0, 6;
+            z-index: 1;
+            position: relative;
+        }
+        
+        footer a {
+            /* color: #999; */
+            text-decoration: none;
+        }
+        
+        footer {
+            padding-top: 30px;
+            background-color: var(--color-light-blue);
+            color: var(--color-white);
+        }
+        
+        .btn:hover {
+            background: #34C6D3;
+        }
+        
+        .bg-imagr {
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .n-s-learning {
+            background-image: url('../img/nstl-bg.jpg');
+            min-height: 400px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom center;
+            position: relative;
+        }
+        /* -------- */
+        
+        .footer-s-icons i {
+            font-size: 1.3rem;
+            margin: 3px;
+            color: var(--color-white);
+        }
+        
+        .footer-nav li {
+            display: inline-block;
+        }
+        
+        @media (max-width:768px) {
+            .section-title:after,
+            .section-title:before {
+                display: none;
+            }
+            .price-label {
+                right: -15px;
+            }
+        }
+        
+        .owl-nav>button {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+        
+        .owl-nav>.owl-next {
+            right: 0;
+        }
+        
+        .owl-nav>.owl-prev {
+            left: 0;
+        }
+        
+        .owl-nav>button>span {
+            font-size: 4rem;
+            color: var(--color-light-blue);
+        }
+        
+        .fa-download a {
+            color: black;
+        }
