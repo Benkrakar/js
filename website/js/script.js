@@ -80,7 +80,7 @@ function domCounter(element, number, duration) {
 let isCounted = false
 window.addEventListener('scroll', function() {
     const learningSection = document.querySelector(".n-s-learning");
-    console.log('learningSection.getBoundingClientRect().top', learningSection.getBoundingClientRect().top);
+    // console.log('learningSection.getBoundingClientRect().top', learningSection.getBoundingClientRect().top);
     if (isCounted == false && (learningSection.getBoundingClientRect().top >= 0 && learningSection.getBoundingClientRect().bottom <= window.innerHeight)) {
         isCounted = true;
         domCounter($(".fa-download + a")[0], 4342);
