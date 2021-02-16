@@ -70,7 +70,7 @@ function domCounter(element, number, duration) {
         if (count <= number) {
             element.innerText = parseInt(count);
         } else {
-            element.innerText = parseInt(number);
+            element.innerText = "+" + parseInt(number);
             clearInterval(interval)
         }
         const willAdd = Math.floor(Math.random() * number / 100);
